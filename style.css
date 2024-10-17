@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: red;
+  padding: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(255, 251, 0);
+}
+
+.nav-links li {
+  margin-right: 16px;
+}
+
+.header {
+  background-image: url('https://th.bing.com/th/id/OIG3.e0GPyGFVsCl_TZMaGg_r?pid=ImgGn');
+  background-position: center;
+  color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  text-align: center;
+  padding: 350px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.header p {
+  font-size: 21px;
+}
+
+.games {
+  padding: 60px 0;
+}
+
+.games h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: moveText 2s linear infinite;
+  color: rgb(243, 70, 27);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes moveText {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.header1 {
+  background-image: url('https://files.tecnoblog.net/wp-content/uploads/2022/01/god-of-war-2018-004-1060x596.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 120px ;
+  margin: 0;
+}
+
+.header1 h1 {
+  text-align: center;
+  color: black;
+}
+
+.header1 h2 {
+  color: rgb(251, 255, 0);
+}
+
+.game-card {
+  background: linear-gradient(rgb(104, 104, 153),white);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 40px;
+}
+
+.game-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.game-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(66, 66, 66);
+}
+
+.game-card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.botao {
+  background: linear-gradient(rgb(78, 78, 199), white);
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold ;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.botao:hover {
+  background-color: darkred;
+  transform: scale(1.03);
+}
+
+.header2 {
+  background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/03/red-dead-redemption-2-undead-nightmare-1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 120px ;
+  margin: 0;
+}
+
+.header2 h1 {
+  text-align: center;
+  color: black;
+}
+
+.game-card1 {
+  background: linear-gradient(red, orange);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 1, 1, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 40px;
+}
+
+.game-card1 img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.game-card1 h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 174, 0);
+}
+
+.game-card1 p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.botao1 {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold ;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.botao1:hover {
+  background-color: darkred;
+  transform: scale(1.03);
+}
+
+.products {
+  width: 80%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(47, 0, 255, 0.1);
+  padding: 20px 30px
+  
+}
+
+.product-card img {
+  width: 82%;
+  border-radius: 8px;
+  transition: transform .5s ease;
+}
+
+.product-card:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.product-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.product-card .price {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00aaff;
+}
+
+.ola {
+  text-align: center;
+  color: #0a3e58;
+  margin-top: 30px;
+}
+
+.btn-buy {
+  background-color: #302f2f;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold ;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-buy:hover {
+  background-color: #0088cc;
+}
+
+.btn-buy1 {
+  background-color: #cac9c9;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold ;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-buy1:hover {
+  background-color: #302f2f;
+}
+
+.btn-buy2 {
+  background-color: #da6565;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold ;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-buy2:hover {
+  background-color: #910a0a;
+}
